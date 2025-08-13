@@ -26,7 +26,7 @@ function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/auth/signup", formData);
+      const res = await axios.post("https://blogem-knty.onrender.com/api/auth/signup", formData);
       alert(res.data.message);
       // Optional: You could redirect user to login or editor after signup success
       // e.g. navigate('/login');
